@@ -1,6 +1,6 @@
 package com.basf.challenge;
 
-import com.basf.challenge.model.User;
+import com.basf.challenge.entity.User;
 import com.basf.challenge.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

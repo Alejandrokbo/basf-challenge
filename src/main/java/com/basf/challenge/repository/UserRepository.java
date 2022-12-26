@@ -1,6 +1,6 @@
 package com.basf.challenge.repository;
 
-import com.basf.challenge.model.User;
+import com.basf.challenge.entity.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

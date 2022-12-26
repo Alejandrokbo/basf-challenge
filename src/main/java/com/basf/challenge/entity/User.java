@@ -1,4 +1,4 @@
-package com.basf.challenge.model;
+package com.basf.challenge.entity;
 
 import org.springframework.data.annotation.Id;
 
