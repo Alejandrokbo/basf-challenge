@@ -1,4 +1,4 @@
-package com.basf.challenge.entity;
+package com.basf.challenge.dto;
 
 import javax.xml.bind.annotation.*;
 import java.util.Date;
