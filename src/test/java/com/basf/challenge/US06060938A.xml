@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questel-patent-document lang="en" date-produced="20190901" produced-by="Questel" schema-version="3.23"
+                         file="US06060938A.xml">
+    <bibliographic-data lang="en">
+        <publication-reference publ-desc="Patents Granted before 2001-04-15">
+            <document-id>
+                <country>US</country>
+                <doc-number>06060938</doc-number>
+                <kind>A</kind>
+                <date>20000509</date>
+            </document-id>
+            <document-id data-format="questel">
+                <doc-number>US6060938</doc-number>
+            </document-id>
+        </publication-reference>
+        <original-publication-kind>A</original-publication-kind>
+        <application-reference family-id="22472003" extended-family-id="13438392">
+            <document-id>
+                <country>US</country>
+                <doc-number>09136246</doc-number>
+                <kind>A</kind>
+                <date>19980819</date>
+            </document-id>
+            <document-id data-format="questel">
+                <doc-number>1998US-09136246</doc-number>
+            </document-id>
+            <document-id data-format="questel_Uid">
+                <doc-number>13723635</doc-number>
+            </document-id>
+        </application-reference>
+        <language-of-filing>en</language-of-filing>
+        <language-of-publication>en</language-of-publication>
+        <priority-claims>
+            <priority-claim kind="national" sequence="1">
+                <country>US</country>
+                <doc-number>13624698</doc-number>
+                <kind>A</kind>
+                <date>19980819</date>
+                <priority-active-indicator>Y</priority-active-indicator>
+            </priority-claim>
+            <priority-claim data-format="questel" sequence="1">
+                <doc-number>1998US-09136246</doc-number>
+            </priority-claim>
+        </priority-claims>
+        <dates-of-public-availability>
+            <publication-of-grant-date>
+                <date>20000509</date>
+            </publication-of-grant-date>
+        </dates-of-public-availability>
+        <classifications-ipcr>
+            <classification-ipcr sequence="1">
+                <text>H03K 17/16 20060101ALI20051220RMJP</text>
+                <ipc-version-indicator>
+                    <date>20060101</date>
+                </ipc-version-indicator>
+                <classification-level>A</classification-level>
+                <section>H</section>
+                <class>03</class>
+                <subclass>K</subclass>
+                <main-group>17</main-group>
+                <subgroup>16</subgroup>
+                <symbol-position>L</symbol-position>
+                <classification-value>I</classification-value>
+                <generating-office>
+                    <country>JP</country>
+                </generating-office>
+                <classification-status>R</classification-status>
+                <classification-data-source>M</classification-data-source>
+                <action-date>
+                    <date>20051220</date>
+                </action-date>
+            </classification-ipcr>
+            <classification-ipcr sequence="2">
+                <text>H01L 21/822 20060101AFI20051220RMJP</text>
+                <ipc-version-indicator>
+                    <date>20060101</date>
+                </ipc-version-indicator>
+                <classification-level>A</classification-level>
+                <section>H</section>
+                <class>01</class>
+                <subclass>L</subclass>
+                <main-group>21</main-group>
+                <subgroup>822</subgroup>
+                <symbol-position>F</symbol-position>
+                <classification-value>I</classification-value>
+                <generating-office>
+                    <country>JP</country>
+                </generating-office>
+                <classification-status>R</classification-status>
+                <classification-data-source>M</classification-data-source>
+                <action-date>
+                    <date>20051220</date>
+                </action-date>
+            </classification-ipcr>
+            <classification-ipcr sequence="3">
+                <text>H01L 27/04 20060101ALI20051220RMJP</text>
+                <ipc-version-indicator>
+                    <date>20060101</date>
+                </ipc-version-indicator>
+                <classification-level>A</classification-level>
+                <section>H</section>
+                <class>01</class>
+                <subclass>L</subclass>
+                <main-group>27</main-group>
+                <subgroup>04</subgroup>
+                <symbol-position>L</symbol-position>
+                <classification-value>I</classification-value>
+                <generating-office>
+                    <country>JP</country>
+                </generating-office>
+                <classification-status>R</classification-status>
+                <classification-data-source>M</classification-data-source>
+                <action-date>
+                    <date>20051220</date>
+                </action-date>
+            </classification-ipcr>
+            <classification-ipcr sequence="4">
+                <text>H03F 3/30 20060101ALI20051220RMJP</text>
+                <ipc-version-indicator>
+                    <date>20060101</date>
+                </ipc-version-indicator>
+                <classification-level>A</classification-level>
+                <section>H</section>
+                <class>03</class>
+                <subclass>F</subclass>
+                <main-group>3</main-group>
+                <subgroup>30</subgroup>
+                <symbol-position>L</symbol-position>
+                <classification-value>I</classification-value>
+                <generating-office>
+                    <country>JP</country>
+                </generating-office>
+                <classification-status>R</classification-status>
+                <classification-data-source>M</classification-data-source>
+                <action-date>
+                    <date>20051220</date>
+                </action-date>
+            </classification-ipcr>
+            <classification-ipcr sequence="5">
+                <text>H03K 19/003 20060101A I20051008RMEP</text>
+                <ipc-version-indicator>
+                    <date>20060101</date>
+                </ipc-version-indicator>
+                <classification-level>A</classification-level>
+                <section>H</section>
+                <class>03</class>
+                <subclass>K</subclass>
+                <main-group>19</main-group>
+                <subgroup>003</subgroup>
+                <classification-value>I</classification-value>
+                <generating-office>
+                    <country>EP</country>
+                </generating-office>
+                <classification-status>R</classification-status>
+                <classification-data-source>M</classification-data-source>
+                <action-date>
+                    <date>20051008</date>
+                </action-date>
+            </classification-ipcr>
+            <classification-ipcr sequence="6">
+                <text>H03K 19/0175 20060101ALI20060101BMKR</text>
+                <ipc-version-indicator>
+                    <date>20060101</date>
+                </ipc-version-indicator>
+                <classification-level>A</classification-level>
+                <section>H</section>
+                <class>03</class>
+                <subclass>K</subclass>
+                <main-group>19</main-group>
+                <subgroup>0175</subgroup>
+                <symbol-position>L</symbol-position>
+                <classification-value>I</classification-value>
+                <generating-office>
+                    <country>KR</country>
+                </generating-office>
+                <classification-status>B</classification-status>
+                <classification-data-source>M</classification-data-source>
+                <action-date>
+                    <date>20060101</date>
+                </action-date>
+            </classification-ipcr>
+        </classifications-ipcr>
+        <classification-national>
+            <country>US</country>
+            <main-classification>
+                <text>327391000</text>
+                <class>327</class>
+                <subclass>391000</subclass>
+            </main-classification>
+            <further-classification sequence="1">
+                <text>326027000</text>
+                <class>326</class>
+                <subclass>027000</subclass>
+            </further-classification>
+            <further-classification sequence="2">
+                <text>327112000</text>
+                <class>327</class>
+                <subclass>112000</subclass>
+            </further-classification>
+            <further-classification sequence="3">
+                <text>327320000</text>
+                <class>327</class>
+                <subclass>320000</subclass>
+            </further-classification>
+            <further-classification sequence="4">
+                <text>327328000</text>
+                <class>327</class>
+                <subclass>328000</subclass>
+            </further-classification>
+        </classification-national>
+        <classifications-ecla>
+            <classification-ecla sequence="1">
+                <text>H03K-019/003J4</text>
+                <section>H</section>
+                <class>03</class>
+                <subclass>K</subclass>
+                <main-group>019</main-group>
+                <subgroup>003</subgroup>
+            </classification-ecla>
+        </classifications-ecla>
+        <patent-classifications>
+            <patent-classification sequence="1">
+                <classification-scheme office="EP" scheme="CPC">
+                    <date>20130101</date>
+                </classification-scheme>
+                <classification-symbol>H03K-019/00361</classification-symbol>
+                <section>H</section>
+                <class>03</class>
+                <subclass>K</subclass>
+                <main-group>19</main-group>
+                <subgroup>00361</subgroup>
+                <symbol-position>F</symbol-position>
+                <classification-value>I</classification-value>
+                <classification-status>B</classification-status>
+                <classification-data-source>H</classification-data-source>
+                <action-date>
+                    <date>20130101</date>
+                </action-date>
+            </patent-classification>
+        </patent-classifications>
+        <number-of-claims>6</number-of-claims>
+        <exemplary-claim>1</exemplary-claim>
+        <figures>
+            <number-of-drawing-sheets>3</number-of-drawing-sheets>
+            <number-of-figures>3</number-of-figures>
+            <image-key data-format="questel">US6060938</image-key>
+        </figures>
+        <invention-title format="original" lang="en" id="title_en">Output buffer for reducing switching noise
+        </invention-title>
+        <references-cited>
+            <citation srep-phase="examiner">
+                <patcit num="1">
+                    <text>YOUNG WILLIAM R, et al</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>4818901</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US4818901</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="2">
+                    <text>DAVIS JEFFREY B</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>4961010</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US4961010</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="3">
+                    <text>SCHRECK JOHN F, et al</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5120999</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5120999</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="4">
+                    <text>TANOI SATORU</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5237213</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5237213</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="5">
+                    <text>WANLASS FRANK M</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5319260</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5319260</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="6">
+                    <text>HUSH GLEN, et al</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5349247</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5349247</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="7">
+                    <text>LUBECK PAUL R, et al</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5367645</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5367645</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="8">
+                    <text>YASUDA KENICHI</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5382847</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5382847</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="9">
+                    <text>CAMPBELL DAVID L, et al</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5546033</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5546033</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="10">
+                    <text>MURAKAMI NOBUO</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5552719</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5552719</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="11">
+                    <text>LUI HENRY Y, et al</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5568081</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5568081</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="12">
+                    <text>DOHI YOSHITSUGU, et al</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5583460</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5583460</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="13">
+                    <text>DIJKMANS EISE C</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5587678</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5587678</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="14">
+                    <text>THAYER BILLY E, et al</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5598119</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5598119</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="15">
+                    <text>HAMASAKI TOSHIHIKO, et al</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5694065</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5694065</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation srep-phase="examiner">
+                <patcit num="16">
+                    <text>ISHIKURI HITOSHI</text>
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5699000</doc-number>
+                        <kind>A</kind>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5699000</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="17">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>4818901</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US4818901</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="18">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>4961010</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US4961010</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="19">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5120999</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5120999</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="20">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5237213</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5237213</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="21">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5319260</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5319260</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="22">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5349247</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5349247</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="23">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5367645</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5367645</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="24">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5382847</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5382847</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="25">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5546033</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5546033</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="26">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5552719</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5552719</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="27">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5568081</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5568081</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="28">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5583460</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5583460</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="29">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5587678</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5587678</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="30">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5598119</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5598119</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="31">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5694065</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5694065</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+            <citation>
+                <patcit num="32">
+                    <document-id>
+                        <country>US</country>
+                        <doc-number>5699000</doc-number>
+                    </document-id>
+                    <document-id data-format="questel">
+                        <doc-number>US5699000</doc-number>
+                    </document-id>
+                </patcit>
+            </citation>
+        </references-cited>
+        <parties>
+            <applicants>
+                <applicant data-format="original" app-type="applicant" sequence="1">
+                    <addressbook lang="en">
+                        <orgname>Fairchild Semiconductor Corp.</orgname>
+                        <address>
+                            <address-1>South Portland, ME, US</address-1>
+                            <city>South Portland</city>
+                            <state>ME</state>
+                            <country>US</country>
+                        </address>
+                    </addressbook>
+                    <nationality>
+                        <country>US</country>
+                    </nationality>
+                </applicant>
+                <applicant data-format="questel" app-type="applicant" sequence="2">
+                    <addressbook lang="en">
+                        <orgname>FAIRCHILD SEMICONDUCTOR</orgname>
+                    </addressbook>
+                    <nationality>
+                        <country>US</country>
+                    </nationality>
+                </applicant>
+            </applicants>
+            <inventors>
+                <inventor data-format="original" sequence="1">
+                    <addressbook lang="en">
+                        <name>Morrill, David P.</name>
+                        <address>
+                            <address-1>Portland, ME, US</address-1>
+                            <city>Portland</city>
+                            <state>ME</state>
+                            <country>US</country>
+                        </address>
+                    </addressbook>
+                    <nationality>
+                        <country>US</country>
+                    </nationality>
+                </inventor>
+            </inventors>
+            <agents>
+                <agent sequence="1" rep-type="agent">
+                    <addressbook lang="en">
+                        <name>Atwood, Pierce</name>
+                    </addressbook>
+                </agent>
+                <agent sequence="2" rep-type="agent">
+                    <addressbook lang="en">
+                        <name>Caseiro, Chris A.</name>
+                    </addressbook>
+                </agent>
+            </agents>
+        </parties>
+        <examiners>
+            <primary-examiner>
+                <name>Callahan, Timothy P.</name>
+            </primary-examiner>
+        </examiners>
+        <lgst-data>
+            <lgst-status>EXPIRED</lgst-status>
+        </lgst-data>
+    </bibliographic-data>
+    <abstract format="original" lang="en" id="abstr_en">
+        <p id="P-EN-00001" num="00001">
+            <br/>
+            An output buffer for reducing the signal noise associated with the switching between logic high and logic
+            low electrical.
+            <br/>
+            Signals includes a first clamping circuit linked to the pull-up output transistor of the buffer, and a
+            second clamping circuit linked to the pull-down output transistor of the buffer.
+            <br/>
+            The buffer may include both clamping circuits or either the first or second clamping circuit alone,
+            dependent upon signal shaping interests.
+            <br/>
+            Each of the clamping circuits includes a selectable delay stage coupled to the buffer's input, a current
+            regulator controlled by the delay stage, and a clamping device that is coupled to the control node of the
+            output transistor.
+            <br/>
+            When the current regulator is conducting, the control node of the output transistor is clamped at a
+            potential near its threshold turn-on.
+            <br/>
+            As a result, when the clamping circuit is turned off, the output transistor experiences a soft turn-on,
+            thereby reducing signal bounce and the associated noise.
+        </p>
+    </abstract>
+    <description format="original" lang="en" id="desc_en">
+        <p num="1">
+            <h1>BACKGROUND OF THE INVENTION</h1>
+        </p>
+        <p num="2">1. Field of the Invention</p>
+        <p num="3">The present invention relates to circuitry for reducing noise (overshoot and undershoot) associated
+            with the switching of electrical signals transmitted from one location to another. In particular, the
+            present invention relates to an output buffer with control circuitry designed to regulate the potential at
+            the control nodes of the buffer's output transistors.
+        </p>
+        <p num="4">2. Description of the Prior Art</p>
+        <p num="5">Output buffers are used to transfer electrical signals of desired amplitude and strength. Signal
+            transfers occur by way of buses--interfaces that couple active devices that are either on the same
+            semiconductor-based chip or on different chips. The devices may be located proximate to one another, or they
+            may be some distance from one another. One example of a proximate device interface requiring one or more bus
+            connections is the coupling of one printed circuit board to another within a computing system, such as
+            through a backplane bus. An example of a remote device interface requiring one or more bus connections is
+            the coupling of one computing system to another, such as through a telephone transmission line that is,
+            effectively, a voice/data bus.
+        </p>
+        <p num="6">Output buffers are used to ensure that electrical signals are transferred as accurately and as
+            quickly as possible. It is often the case, however, that when transmission rates increase, signal accuracy
+            may suffer. In particular, it is well known that rapid signal transmission may be accompanied by signal
+            bounce. That is, the noise or ringing associated with the undershoot and overshoot of a final steady state
+            logic high or logic low signal that occurs in the transition between high and low. The difference in the
+            potentials associated with a high signal and a low signal may be as small as 0.4 V or as great as 5 V. For
+            Complementary Metal Oxide Semiconductor (CMOS) based logic, for example, a logic high corresponds to a
+            nominal 5.0 V potential (for a 5.0 V power supply) and a nominal 3.3 V potential (for a 3.3 V power supply),
+            while a logic low is essentially equivalent to ground (GND) or 0.0 V.
+        </p>
+        <p num="7">The potentials associated with high and low signals described above are idealized values. In fact,
+            highs and lows generally fall within a range of potentials associated with the indicated values. Thus, for a
+            3.3 V supply, a high signal may be supplied at 2.6 V, for example, while a low signal may actually be
+            associated with a 0.7 V value. As the potentials of the power supplies used to power circuitry move closer
+            to GND, the signal bounce mentioned above takes on greater importance. In particular, the initial
+            oscillation around the ultimate steady state value that occurs when the transition between high and low is
+            triggered may vary enough to generate a false logic signal. The noise swing may be enough to cause a low
+            signal to transition to a high-signal potential and vice-versa, or it may be variable enough that the signal
+            is not clearly at either a high potential or a low potential. Either situation is undesirable. For that
+            reason, it is becoming increasingly important that the transitions between high and low signals occur with
+            less noise than has been previously experienced.
+        </p>
+        <p num="8">Clearly, unexpected changes in logic values are not desirable. This problem is more likely to occur
+            as transmission rates are increased. Increasing transmission rates enables the transfer of more data in a
+            shorter time period and so is desirable in many respects. However, the gain in increased transmission rate
+            is often undermined by an increase in signal noise. That is, a rapid change in signal level creates an
+            oscillation about the steady state value corresponding to the sudden switching on or off of a transistor. As
+            transistors become increasingly smaller in order to achieve the faster transmission rates of interest, the
+            signal bounce that occurs with the rapid switching often creates reflections in transmission media, such as
+            telephone transmission lines where reflections will cause signal errors. It is therefore important to enable
+            "gentle" switching of buffer circuits so that signal noise is reduced.
+        </p>
+        <p num="9">A simplified illustration of a prior-art buffer circuit of the type that exhibits unacceptable signal
+            bounce characteristics is presented in FIG. 1. The buffer circuit includes an input node input for receiving
+            an electrical signal, and an output node output for the transfer of that signal to downstream circuitry. The
+            input node is coupled to an inverter IV1 formed of P-type MOS transistor M1 and N-type MOS transistor M2.
+            The output of the inverter IV1 is connected to the control node of pull-up P-type MOS transistor M3 and
+            pull-down N-type MOS transistor M4. One and only one of transistors M3 and M4 is supposed to be turned on at
+            a given time. When transistor M3 is on, the gate-source voltage (Vgs) exceeds the transistor's threshold
+            voltage (Vt). The output node is at a logic high potential equivalent to high-potential power rail Vcc less
+            the drain-source voltage (Vds) drop associated with transistor M3. In the case of MOS transistors, Vt is
+            about 0.7 V. When transistor M4 is on, the output node is at a logic low potential equivalent to
+            low-potential power rail GND. It can be seen that signal bounce at the control nodes of transistors M3 and
+            M4 may create the situation where the wrong one may be on, they may be conducting simultaneously, or they
+            may both be off. As indicated, any one of those conditions is undesirable.
+        </p>
+        <p num="10">Several attempts have been made to reduce the noise associated with a signal transition. U.S. Pat.
+            No. 5,699,000 issued to Ishikuri describes a buffer circuit having means for regulating the voltage applied
+            to the gates of the pull-up and pull-down transistors. This design affects transistor turn-on delay;
+            however, it fails to solve overshoot and undershoot problems. U.S. Pat. No. 5,568,081 issued to Lui et al.
+            describes a means for regulating the slew rate for the potential applied to the pull-up and pull-down
+            transistors. The Lui buffer is quite complicated in that it utilizes a multitude of components. Such a
+            complicated design makes it difficult to tune the turn-on of the output transistors. It also takes up more
+            space on a chip than is otherwise desirable.
+        </p>
+        <p num="11">Therefore, what is needed is a buffer circuit that reduces the noise associated with signal
+            switching without significantly compromising transmission rate. What is also needed is a buffer circuit that
+            may be tuned to regulate the rate of turn-on of a pull-up or pull-down transistor. Further, what is needed
+            is a "quiet" output buffer circuit that achieves the noted goals without complicated circuitry that takes up
+            valuable layout space.
+        </p>
+        <p num="12">
+            <h1>SUMMARY OF THE INVENTION</h1>
+        </p>
+        <p num="13">It is an object of the present invention to provide an output buffer circuit with minimized noise
+            associated with signal switching. It is an object of the present invention to provide that capability
+            without significantly compromising transmission rate. It is also an object of the present invention to
+            provide an output buffer circuit that may be tuned to regulate the rate of turn-on of a pull-up or pull-down
+            transistor. It is a further object of the present invention to provide a quiet output buffer circuit that
+            achieves the noted goals without complicated circuitry that takes up valuable layout space.
+        </p>
+        <p num="14">These and other objects are achieved in the present invention by clamping the potential at the
+            control node of the non-conducting one of the two output transistors approximately at its threshold value.
+            When an input signal switches, the clamping circuitry of the present invention maintains the potential at
+            the control node of that non-conducting transistor at the threshold value. The clamping circuitry provides a
+            selectable delay in the propagation of the switched signal such that the control node of the non-conducting
+            output transistor remains at the threshold turn-on potential until the conducting output transistor turns
+            off. Only when that occurs will the clamping circuitry permit the potential at the clamped output transistor
+            to change so as to enable full and complete turn on of that transistor. The result is a softening of the
+            turn-on transition in a way that minimizes signal noise and therefore minimizes the chance that an erroneous
+            or ambiguous output signal will be transmitted.
+        </p>
+        <p num="15">The clamping circuitry of the present invention includes a first clamping sub-circuit for softening
+            logic low to logic high transitions, and a second clamping sub-circuit for softening logic high to logic low
+            transitions. An output buffer may incorporate either or both of the clamping sub-circuits as a function of
+            the signal noise problem to be corrected. However, it is generally desirable to include both sub-circuits to
+            provide output symmetry.
+        </p>
+        <p num="16">The first clamping sub-circuit includes a pull-up diode device coupled to the control node of the
+            pull-up output transistor, a pull-up current regulator coupled between the pull-up diode device and the
+            high-potential power rail, and a pull-up delay stage coupled between the input inverter's output and the
+            pull-up current regulator. The second clamping sub-circuit is similarly configured. Specifically, the second
+            sub-circuit includes a pull-down diode device coupled to the control node of the pull-down output
+            transistor, a pull-down current regulator coupled between the pull-down diode device and the low-potential
+            power rail, and a pull-down delay stage coupled between the input inverter's output and the pull-down
+            current regulator.
+        </p>
+        <p num="17">The first clamping sub-circuit and the second clamping sub-circuit may, and preferably do, use
+            substantially the same components to form the delay stage, the diode device, and the current regulator. In
+            particular, the delay stage of either sub-circuit includes one or more inverter stages. The number and size
+            of the inverter stages is dependent upon the delay desired between the turning off of the conducting output
+            transistor and the turning on of the non-conducting output transistor when a signal switch occurs. The diode
+            device may be one or more diodes in series or parallel, or a diode-connected transistor, such as a bipolar
+            or MOS transistor. The current regulator is a transistor, either bipolar or MOS, having its control node
+            tied to the output of the delay stage. When it is on, current passes through it and the diode device. When
+            the current regulator is turned off pursuant to a controlling signal from the delay stage, the current and
+            potential to the output transistor's control node rises so that that transistor is turned completely on.
+        </p>
+        <p num="18">The clamping circuit of the present invention is a simple means of regulating the turning on of
+            either or both of the output transistors of an output buffer. The clamping circuit can be used to define the
+            turn-on rate of the selected output transistor to ensure that turn on is achieved relatively quietly without
+            compromising system propagation rates. The clamping circuit operates to keep the control node of an output
+            transistor near its turn-on threshold thereby avoiding the signal bounce problems that occur as that
+            threshold is traversed. These and other advantages of the present invention will become apparent upon review
+            of the detailed description, the accompanying drawings, and the appended claims.
+        </p>
+        <p num="19">
+            <h1>BRIEF DESCRIPTION OF THE DRAWINGS</h1>
+        </p>
+        <p num="20">FIG. 1 is a simplified circuit diagram showing a generic prior-art output buffer.</p>
+        <p num="21">FIG. 2 is a simplified circuit diagram showing the output driver of the present invention including
+            one clamping sub-circuit for each of the output transistors.
+        </p>
+        <p num="22">FIG. 3 is a waveform illustrating the noise reduction in a high-to-low transition provided by the
+            clamping circuit for an output buffer of the present invention as compared to the prior-art buffer shown in
+            FIG. 1.
+        </p>
+        <p num="23">
+            <h1>DESCRIPTION OF THE PREFERRED EMBODIMENT OF THE INVENTION</h1>
+        </p>
+        <p num="24">An output buffer 10 of the present invention is shown in FIG. 2. Those components of the buffer 10
+            that are the same as the components of the prior-art output buffer of FIG.1 are assigned the same component
+            designations. Thus, inverter IV1, formed of transistors Ml and M2 is the same, as are the input node input,
+            the output node output, the high-potential power rail Vcc, the low-potential power rail GND, pull-up output
+            transistor M3, and pull-down output transistor M4. It is to be noted that output transistors M3 and M4 are
+            modified in operation by the clamping sub-circuits of the present invention to be described herein.
+        </p>
+        <p num="25">The buffer 10 of the present invention includes first clamping sub-circuit 20 for modifying the
+            turn-on of pull-up transistor M3, and second clamping sub-circuit 30 for modifying the turn-on of pull-down
+            transistor M4. The first clamping sub-circuit 20 includes inverter IV2, pull-up current regulating
+            transistor M6, and diode-wired pull-up transistor M5. Inverter IV2 has an input coupled to the output of
+            inverter IV1 and an output coupled to a control node of P-type MOS transistor M6. Inverter IV2 acts as a
+            delay stage to control the turning on of the current regulator that is transistor M6. It is to be understood
+            that inverter IV2 may actually be a plurality of inverters or logic gates in series and sized as a function
+            of the desired propagation delay. When transistor M6 is conducting, P-type diode-wired MOS transistor M5
+            acts to clamp the potential at the control node of transistor M3 to the equivalent of about the potential of
+            Vcc less the drop across that diode-acting transistor M5. At that clamped potential, pull-up output
+            transistor M3 is off but nearer its threshold turn-on potential than that provided in the prior-art buffer.
+        </p>
+        <p num="26">Sub-circuit 30 includes inverter IV3, pull-down current regulating transistor M8, and diode-wired
+            pull-down transistor M7. Inverter IV3 has an input coupled to the output of inverter IV1 and an output
+            coupled to a control node of N-type MOS transistor M8. Inverter IV3 acts as a delay stage to control the
+            turning on of the current regulator that is transistor M8. It is to be understood that inverter IV3 may
+            actually be a plurality of inverters or logic gates in series and sized as a function of the desired
+            propagation delay. When transistor M8 is conducting, N-type diode-wired MOS transistor M7 acts to clamp the
+            potential at the control node of transistor M4 to the equivalent of about the potential of GND plus the drop
+            across that diode-acting transistor M7. At that clamped potential, pull-down output transistor M4 is off but
+            nearer its threshold turn-on potential than that provided in the prior-art buffer.
+        </p>
+        <p num="27">In operation, the circuit 10 acts as follows. When the buffered signal is at a logic high,
+            transistor M3 is conducting and transistor M4 is not conducting. In addition, transistor M6 is not
+            conducting and transistor M8 is conducting. The gate of transistor M4 is grounded through transistor M2
+            until a transition is initiated. At that time, when transistor Ml turns on, transistor M4 is clamped through
+            transistor M7. That is, transistor M4 is completely off until a transition occurs. (Transistor M3 operates
+            in a similar opposing manner.) When input switches from high to low, corresponding to a desired output
+            signal switch from high to low, the gate of M3 is driven high, and it becomes non-conducting. In addition,
+            the gate of M4 is driven high. However, the connection of M4 to M7 clamps the potential at that node to the
+            diode drop as long as MB remains on. Therefore, M4 remains off. The selectable propagation delay through
+            inverter IV3 delays the signal transmission to the gate of M8. When that occurs, M8 turns off and the gate
+            of M4 becomes fully charged such that that transistor conducts, thereby providing a logic low potential
+            equivalent to the output node output.
+        </p>
+        <p num="28">For the low to high switching, the gate of M4 is driven low, and it proceeds to become
+            non-conducting. In addition, the gate of M3 is driven to low. However, the connection of the gate of M3 to
+            MS clamps the potential at that node to the diode drop equivalent as long as M6 remains on. Therefore, M3
+            remains off. The selectable propagation delay through inverter IV2 delays the transmission of a logic high
+            to the gate of M6. When that occurs, M6 turns off and the gate of M3 becomes fully charged such that that
+            transistor conducts, thereby providing a logic high potential equivalent to the output node output.
+        </p>
+        <p num="29">FIG. 3 illustrates the advantage of the application of the second clamping circuit 30 in regard to
+            the softening of a high-to-low transition of a buffered signal. Line 40 represents the signal transition
+            through the prior-art buffer, while line 50 represents the signal transition through buffer 10. As can be
+            seen, the peak-to-peak oscillation occurring with the prior-art buffer is about 1.1 V, representing a
+            significant and undesirable signal bounce. On the other hand, buffer 10 reduces that peak-to-peak
+            oscillation to about 0.8 V--a difference of 0.3 V. Such a difference is significant under the operating head
+            of present and proposed future computing systems.
+        </p>
+        <p num="30">While the invention has been described with reference to particular example embodiments, it is
+            intended to cover all modifications and equivalents within the scope of the following claims.
+        </p>
+    </description>
+    <claims format="original" lang="en" id="claim_en">
+        <claim num="1">
+            <claim-text>
+                <h1>I claim:</h1>
+            </claim-text>
+            <claim-text>1. An output buffer having an input node and an output node, the buffer comprising:  a. a
+                pull-up transistor having a control node coupled to the input node, a high-potential node coupled to a
+                high-potential power rail, and a low-potential node coupled to the output node;  b. a pull-down
+                transistor having a control node coupled to the input node, a high-potential node coupled to the output
+                node, and a low-potential node coupled to a low-potential power rail;  c. a first clamping sub-circuit
+                including a first delay stage, a first diode device, and a first current regulator, wherein said first
+                delay stage includes an input node coupled to the input node of the output buffer, and an output node
+                coupled to a control node of said first current regulator, wherein said first diode device includes a
+                low-potential node coupled to said control node of said pull-up transistor and a high-potential node
+                coupled to a low-potential node of said first current regulator, and wherein said first current
+                regulator includes a high-potential node coupled to said high-potential power rail; and  d. a second
+                clamping sub-circuit including a second delay stage, a second diode device, and a second current
+                regulator, wherein said second delay stage includes an input node coupled to the input node of the
+                output buffer, and an output node coupled to a control node of said second current regulator, wherein
+                said second diode device includes a high-potential node coupled to said control node of said pull-down
+                transistor and a low-potential node coupled to a high-potential node of said second current regulator,
+                and wherein said second current regulator includes a low-potential node coupled to said low-potential
+                power rail.
+            </claim-text>
+        </claim>
+        <claim num="2">
+            <claim-text>2. The buffer as claimed in claim 1 wherein said first delay stage includes one or more
+                inverters and wherein said second delay stage includes one or more inverters.
+            </claim-text>
+        </claim>
+        <claim num="3">
+            <claim-text>3. The buffer as claimed in claim 2 wherein said first current regulator is a PMOS transistor
+                and said second current regulator is an NMOS transistor.
+            </claim-text>
+        </claim>
+        <claim num="4">
+            <claim-text>4. The buffer as claimed in claim 3 wherein said first diode device is a diode and said second
+                diode device is a diode.
+            </claim-text>
+        </claim>
+        <claim num="5">
+            <claim-text>5. The buffer as claimed in claim 3 wherein said first diode device is a diode-wired PMOS
+                transistor and said second diode device is a diode-wired NMOS transistor.
+            </claim-text>
+        </claim>
+        <claim num="6">
+            <claim-text>6. A method for reducing signal noise associated with the transition between logic high and
+                logic low potentials in a buffer having an input node, an output node, and a pull-up transistor and a
+                pull-down transistor coupled to the output node, the method comprising the steps of:  a. clamping the
+                potential at a control node of the pull-up transistor at a level near a threshold turn-on potential of
+                the pull-up transistor when the pull-up transistor starts to conduct;  b. eliminating the clamping of
+                the potential at the control node of the pull-up transistor after a first selectable delay in order to
+                enable full charging of the control node of the pull-up transistor when the pull-up transistor is to be
+                conducting;  c. clamping the potential at a control node of the pull-down transistor at a level near a
+                threshold turn-on potential of the pull-down transistor when the pull-down transistor starts to conduct;
+                and  d. eliminating the clamping of the potential at the control node of the pull-down transistor after
+                a second selectable delay in order to enable full charging of the control node of the pull-down
+                transistor when the pull-down transistor is to be conducting.
+            </claim-text>
+        </claim>
+    </claims>
+</questel-patent-document>
