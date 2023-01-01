@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -47,7 +48,7 @@ public class ReadXMLPropertiesTest {
     @Test
     public void readXmlFileAndAssertAttributes() throws IOException {
         FileInputStream xmlFile = new FileInputStream("src/test/java/com/basf/challenge/book.xml");
-        String data = IOUtils.toString(xmlFile, "UTF-8");
+        String data = IOUtils.toString(xmlFile, StandardCharsets.UTF_8);
         XmlMapper xmlMapper = new XmlMapper();
         Book value = xmlMapper.readValue(data, Book.class);
         assertEquals(1, (long) value.getId());
@@ -58,7 +59,7 @@ public class ReadXMLPropertiesTest {
     @Test
     public void readXmlFilePatentsAndAssertNotNull() throws IOException {
         FileInputStream xmlFile = new FileInputStream("src/test/java/com/basf/challenge/US06060938A.xml");
-        String data = IOUtils.toString(xmlFile, "UTF-8");
+        String data = IOUtils.toString(xmlFile, StandardCharsets.UTF_8);
         JacksonXmlModule module = new JacksonXmlModule();
         module.setDefaultUseWrapper(false);
         XmlMapper xmlMapper = new XmlMapper(module);
