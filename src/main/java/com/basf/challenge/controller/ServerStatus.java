@@ -1,10 +1,14 @@
 package com.basf.challenge.controller;
 
+import com.basf.challenge.contants.ResponseConstants;
 import com.basf.challenge.dto.ResponseMessageDTO;
+import com.basf.challenge.service.ResponseHandler;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,10 +24,10 @@ public class ServerStatus {
     })
     @ResponseBody
     @GetMapping("")
-    public ResponseMessageDTO hello() {
-        ResponseMessageDTO resp = new ResponseMessageDTO();
-        resp.status = "OK";
-        resp.message = "Server is Online";
-        return resp;
+    public ResponseEntity<ResponseMessageDTO> hello() {
+        return ResponseHandler.response(
+                ResponseConstants.OK.getStatus(),
+                ResponseConstants.OK.getMessage(),
+                HttpStatus.OK);
     }
 }
