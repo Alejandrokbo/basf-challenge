@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      database: basf-db
+      password: secret
+      port: '27017'
+      uri: mongodb://root:secret@localhost:27017
+  mvc:
+    path match:
+      matching-strategy: ANT_PATH_MATCHER
+server:
+  error:
+    path: /error
+    whitelabel:
+      enabled: 'false'

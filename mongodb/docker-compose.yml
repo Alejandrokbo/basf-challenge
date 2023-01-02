@@ -8,8 +8,8 @@ services:
     restart: always
     container_name: basf-challenge-mongo
     environment:
-      MONGO_INITDB_ROOT_USERNAME:
-      MONGO_INITDB_ROOT_PASSWORD:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: secret
     volumes:
       - ./data:/data/db
       - ./data/log:/var/log/mongodb/
