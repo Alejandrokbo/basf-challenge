@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class ResponseMessageDTO {
     @JsonProperty("status")
-    public String status;
+    public String statusMessage;
     @JsonProperty("message")
     public String message;
 }
