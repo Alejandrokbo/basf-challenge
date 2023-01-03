@@ -146,6 +146,7 @@ public class BibliographicData {
     protected List<String> independentClaims;
     protected Figures figures;
     @XmlElement(name = "invention-title")
+    @JacksonXmlProperty(localName = "invention-title")
     protected List<InventionTitle> inventionTitle;
     @XmlElement(name = "references-cited")
     protected ReferencesCited referencesCited;

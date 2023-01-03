@@ -8,6 +8,7 @@
 
 package com.basf.challenge.dto.xmlProperties;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import org.w3c.dom.Element;
 
 import javax.xml.bind.annotation.*;
@@ -44,10 +45,8 @@ import java.util.List;
 })
 @XmlRootElement(name = "p")
 public class P {
-
-    @XmlMixed
-    @XmlAnyElement
-    protected List<Object> content;
+    @JacksonXmlProperty(localName = "br")
+    protected List<Br> content;
     @XmlAttribute(name = "id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlID
@@ -77,9 +76,9 @@ public class P {
      * {@link Element }
      * {@link String }
      */
-    public List<Object> getContent() {
+    public List<Br> getContent() {
         if (content == null) {
-            content = new ArrayList<Object>();
+            content = new ArrayList<Br>();
         }
         return this.content;
     }

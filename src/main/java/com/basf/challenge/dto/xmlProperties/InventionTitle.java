@@ -8,6 +8,8 @@
 
 package com.basf.challenge.dto.xmlProperties;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText;
+
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -38,6 +40,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 public class InventionTitle {
 
     @XmlValue
+    @JacksonXmlText
     protected String content;
     @XmlAttribute(name = "id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
