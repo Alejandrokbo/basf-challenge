@@ -2,7 +2,7 @@ package com.basf.challenge.controller;
 
 import com.basf.challenge.contants.ResponseConstants;
 import com.basf.challenge.dto.ResponseMessageDTO;
-import com.basf.challenge.service.ResponseHandler;
+import com.basf.challenge.http.ResponseHandler;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.boot.web.servlet.error.ErrorController;

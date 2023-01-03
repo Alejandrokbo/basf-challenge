@@ -1,4 +1,4 @@
-package com.basf.challenge;
+package com.basf.challenge.services;
 
 import com.basf.challenge.dto.Book;
 import com.basf.challenge.dto.xmlProperties.QuestelPatentDocument;

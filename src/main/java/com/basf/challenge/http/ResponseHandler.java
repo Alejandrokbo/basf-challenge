@@ -1,4 +1,4 @@
-package com.basf.challenge.service;
+package com.basf.challenge.http;
 
 import com.basf.challenge.dto.ResponseDataDTO;
 import com.basf.challenge.dto.ResponseMessageDTO;
