@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(value = ServerStatus.class)
 @WithMockUser
-public class ControllerTests {
+public class ServerControllerTests {
     @Autowired
     private MockMvc mockMvc;
 
