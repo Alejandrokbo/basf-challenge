@@ -1,14 +1,11 @@
-package com.basf.challenge;
+package com.basf.challenge.services;
 
 import com.basf.challenge.dto.Book;
-import com.basf.challenge.dto.xmlProperties.QuestelPatentDocument;
-import com.basf.challenge.entity.Patent;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule;
+import com.basf.challenge.service.xmlService.PatentService;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.FileInputStream;
@@ -22,18 +19,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest
 public class ReadXMLPropertiesTest {
 
-    @Test
-    public void convertJavaObjectToXmlTest() throws JsonProcessingException {
-        var patent = new Patent();
-        patent.setYear(1990);
-        patent.setTitle("Tittle1");
-        patent.setAbstract("LoremIpsum");
-
-        XmlMapper mapper = new XmlMapper();
-        String xml = mapper.writeValueAsString(patent);
-        System.out.println(xml);
-        assertNotNull(xml);
-    }
+    @Autowired
+    private PatentService service;
 
     @Test
     public void readXmlAndAssetAttributesTest() throws IOException {
@@ -57,14 +44,13 @@ public class ReadXMLPropertiesTest {
     }
 
     @Test
-    public void readXmlFilePatentsAndAssertNotNull() throws IOException {
-        FileInputStream xmlFile = new FileInputStream("src/test/java/com/basf/challenge/US06060938A.xml");
-        String data = IOUtils.toString(xmlFile, StandardCharsets.UTF_8);
-        JacksonXmlModule module = new JacksonXmlModule();
-        module.setDefaultUseWrapper(false);
-        XmlMapper xmlMapper = new XmlMapper(module);
-        xmlMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-        QuestelPatentDocument value = xmlMapper.readValue(data, QuestelPatentDocument.class);
-        assertNotNull(value);
+    public void readXmlFilePatentsAndAssertNotNull() throws Exception {
+        var questelPatentDocument = service.readXmlData(readXMLFile("src/test/java/com/basf/challenge/US06060938A.xml"));
+        assertNotNull(questelPatentDocument);
+    }
+
+    private static String readXMLFile(String path) throws IOException {
+        FileInputStream xmlFile = new FileInputStream(path);
+        return IOUtils.toString(xmlFile, StandardCharsets.UTF_8);
     }
 }

@@ -2,7 +2,7 @@ package com.basf.challenge.controller;
 
 import com.basf.challenge.contants.ResponseConstants;
 import com.basf.challenge.dto.ResponseMessageDTO;
-import com.basf.challenge.service.ResponseHandler;
+import com.basf.challenge.http.ResponseHandler;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

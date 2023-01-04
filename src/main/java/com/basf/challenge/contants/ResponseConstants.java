@@ -9,8 +9,9 @@ public enum ResponseConstants {
     /**
      * @ERROR Custom error for responses
      */
-    ERROR_404("NOT_FOUND", "This content doesn't exist in this path."),
-    ERROR_500("GATEWAY_ERROR", "Something was wrong.");
+    E404("NOT_FOUND", "This content doesn't exist in this path."),
+    E500("GATEWAY_ERROR", "Something was wrong."),
+    EF01("NOT_FILE", "Please select a file to upload.");
 
     private final String status;
     private final String message;
