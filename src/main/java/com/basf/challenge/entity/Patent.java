@@ -1,53 +1,28 @@
 package com.basf.challenge.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
+@Document("patent")
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonPropertyOrder({"id", "year", "title", "abstract"})
+@Data
 public class Patent {
     @Id
     public String id;
-    public Integer year;
-    public String title;
-    public String _abstract;
+    @JsonProperty("year")
+    public String year;
 
-    // Getters and Setters
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public Integer getYear() {
-        return year;
-    }
-
-    public void setYear(Integer year) {
-        this.year = year;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String get_abstract() {
-        return _abstract;
-    }
-
-    public void setAbstract(String _abstract) {
-        this._abstract = _abstract;
-    }
-
-    @Override
-    public String toString() {
-        return String.format(
-                "Patent[id=%s, year='%s', title='%s', abstract='%s']",
-                id, year, title, _abstract);
-    }
-
+    @JsonProperty("title")
+    public List<Object> title;
+    @JsonProperty("abstract")
+    public List<Object> _abstract;
 }
+
+

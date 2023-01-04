@@ -1,10 +1,7 @@
 package com.basf.challenge.services;
 
 import com.basf.challenge.dto.Book;
-import com.basf.challenge.dto.xmlProperties.QuestelPatentDocument;
-import com.basf.challenge.entity.Patent;
 import com.basf.challenge.service.xmlService.PatentService;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;
@@ -24,19 +21,6 @@ public class ReadXMLPropertiesTest {
 
     @Autowired
     private PatentService service;
-
-    @Test
-    public void convertJavaObjectToXmlTest() throws JsonProcessingException {
-        var patent = new Patent();
-        patent.setYear(1990);
-        patent.setTitle("Tittle1");
-        patent.setAbstract("LoremIpsum");
-
-        XmlMapper mapper = new XmlMapper();
-        String xml = mapper.writeValueAsString(patent);
-        System.out.println(xml);
-        assertNotNull(xml);
-    }
 
     @Test
     public void readXmlAndAssetAttributesTest() throws IOException {
@@ -60,8 +44,8 @@ public class ReadXMLPropertiesTest {
     }
 
     @Test
-    public void readXmlFilePatentsAndAssertNotNull() throws IOException {
-        QuestelPatentDocument questelPatentDocument = service.readXmlData(readXMLFile("src/test/java/com/basf/challenge/US06060938A.xml"));
+    public void readXmlFilePatentsAndAssertNotNull() throws Exception {
+        var questelPatentDocument = service.readXmlData(readXMLFile("src/test/java/com/basf/challenge/US06060938A.xml"));
         assertNotNull(questelPatentDocument);
     }
 

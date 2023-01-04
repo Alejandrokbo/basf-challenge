@@ -6,7 +6,7 @@ spring:
       database: basf-db
       password: secret
       port: '27017'
-      uri: mongodb://root:secret@localhost:27017
+      uri: mongodb://root:secret@localhost:27017/
   mvc:
     path match:
       matching-strategy: ANT_PATH_MATCHER

@@ -25,10 +25,8 @@ public class ResponseHandler {
     public static ResponseEntity<ResponseDataDTO> response(String statusMessage, String message, HttpStatus status, Object responseObj) {
         var resp = new ResponseDataDTO();
         resp.data = responseObj;
-        var mess = new ResponseMessageDTO();
-        mess.statusMessage = statusMessage;
-        mess.message = message;
-        resp.responseMessageDTO = mess;
+        resp.message = message;
+        resp.statusMessage = statusMessage;
         return new ResponseEntity<>(resp, defaultHeaders(), status);
     }
 

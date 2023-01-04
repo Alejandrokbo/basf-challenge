@@ -6,7 +6,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 
 public interface PatentRepository extends MongoRepository<Patent, String> {
-    List<Patent> findByYear(Integer year);
-
-    List<Patent> findByTitle(String tittle);
+    List<Patent> findByYear(String year);
 }

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class Error404 implements ErrorController {
+public class ErrorHandler implements ErrorController {
 
     @RequestMapping("/error")
     public ResponseEntity<ResponseMessageDTO> handleError(HttpServletRequest request) {
@@ -27,14 +27,20 @@ public class Error404 implements ErrorController {
             int statusCode = Integer.parseInt(status.toString());
             if (statusCode == HttpStatus.NOT_FOUND.value()) {
                 resp = ResponseHandler.response(
-                        ResponseConstants.ERROR_404.getStatus(),
-                        ResponseConstants.ERROR_404.getMessage(),
+                        ResponseConstants.E404.getStatus(),
+                        ResponseConstants.E404.getMessage(),
                         HttpStatus.NOT_FOUND);
             } else if (statusCode == HttpStatus.INTERNAL_SERVER_ERROR.value()) {
                 resp = ResponseHandler.response(
-                        ResponseConstants.ERROR_500.getStatus(),
-                        ResponseConstants.ERROR_500.getMessage(),
+                        ResponseConstants.E500.getStatus(),
+                        ResponseConstants.E500.getMessage(),
                         HttpStatus.INTERNAL_SERVER_ERROR);
+            } else if (statusCode == HttpStatus.METHOD_NOT_ALLOWED.value()) {
+                resp = ResponseHandler.response(
+                        ResponseConstants.E500.getStatus(),
+                        ResponseConstants.E500.getMessage(),
+                        HttpStatus.INTERNAL_SERVER_ERROR);
+
             }
         }
         return resp;
