@@ -1,0 +1,114 @@
+{
+  "info": {
+    "_postman_id": "bbea417b-f8d4-448a-8da2-6313c3ae0499",
+    "name": "BASF CHALLENGE ENDPOINTS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "10410905"
+  },
+  "item": [
+    {
+      "name": "SERVER STATUS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/status",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPLOAD FILE",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/git-projects/BASF/back_20001_40000/US06060921A.xml"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{host}}/patent/upload",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "patent",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET ALL PATENTS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/patent",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "patent"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET PATENT",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/patent?id=63b60093c076ae21a9d2fc34",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "patent"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "63b60093c076ae21a9d2fc34"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE PATENT",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/patent/delete/63b60487e30b2c34f77501ac",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "patent",
+            "delete",
+            "63b60487e30b2c34f77501ac"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 package com.basf.challenge.controller;
 
 import com.basf.challenge.contants.ResponseConstants;
+import com.basf.challenge.controller.api.ServerStatus;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.skyscreamer.jsonassert.JSONAssert;
