@@ -23,6 +23,9 @@ public class Patent {
     public List<Object> title;
     @JsonProperty("abstract")
     public List<Object> _abstract;
+
+    @JsonProperty("ner_extractions")
+    public Object nerAbstractions;
 }
 
 

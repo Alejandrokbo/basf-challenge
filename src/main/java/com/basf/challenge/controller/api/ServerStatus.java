@@ -1,4 +1,4 @@
-package com.basf.challenge.controller;
+package com.basf.challenge.controller.api;
 
 import com.basf.challenge.contants.ResponseConstants;
 import com.basf.challenge.dto.ResponseMessageDTO;

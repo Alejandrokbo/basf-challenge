@@ -9,11 +9,15 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.util.CoreMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
 import static com.basf.challenge.utils.StringTools.cleanText;
 
@@ -55,13 +59,53 @@ public class PatentServiceImp implements PatentService {
 
         var abstractArray = brContent.split("<br/>");
         var predicates = new ArrayList<>();
+        var nerAbstraction = new ArrayList<>();
         for (int i = 1; i < abstractArray.length; i++) {
             var sentence = new HashMap<Integer, String>();
-            sentence.put(i, cleanText(abstractArray[i]));
+            var cleanSentence = cleanText(abstractArray[i]);
+            nerAbstraction.addAll(extractNerWords(cleanSentence, nerAbstraction));
+            sentence.put(i, cleanSentence);
             predicates.add(sentence);
         }
         patent.set_abstract(predicates);
+        patent.setNerAbstractions(nerAbstraction);
         return repository.save(patent);
     }
 
+    @Override
+    public List<Patent> findAllPatents() {
+        return repository.findAll();
+    }
+
+    @Override
+    public Optional<Patent> findById(String id) {
+        return repository.findById(id);
+    }
+
+    @Override
+    public void deleteById(Patent patent) {
+        repository.delete(patent);
+    }
+
+    private static List<String> extractNerWords(String text, List nerList) {
+        var props = new Properties();
+        props.setProperty("annotators", "tokenize, ssplit, parse, depparse");
+        var pipeline = new StanfordCoreNLP(props);
+        Annotation document = new Annotation(text);
+        pipeline.annotate(document);
+        List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
+        List<String> wordsRelated = new ArrayList<>();
+        for (CoreMap sentence : sentences) {
+            for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                String word = token.get(CoreAnnotations.TextAnnotation.class);
+                var pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
+                if (pos.equals("NNP") || pos.equals("NN")) {
+                    if (!nerList.contains(word) && !wordsRelated.contains(word)) {
+                        wordsRelated.add(word);
+                    }
+                }
+            }
+        }
+        return wordsRelated;
+    }
 }

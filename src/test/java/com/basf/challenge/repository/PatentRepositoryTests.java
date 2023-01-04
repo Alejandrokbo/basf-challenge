@@ -5,16 +5,17 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.TestPropertySource;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
-@TestPropertySource(locations = "classpath:application.yml")
 public class PatentRepositoryTests {
 
     @Autowired
@@ -22,17 +23,18 @@ public class PatentRepositoryTests {
 
     Patent patent1, patent2, patent3;
 
+    final String ID = "63b60093c076ae21a9d2fc34";
+
     @BeforeEach
     public void setUp() {
         repository.deleteAll();
 
         var patent = new Patent();
         patent.setYear("1991");
-
+        patent.setId(ID);
         var titleList = new ArrayList<>();
         var titleMap = new HashMap<String, String>();
         titleMap.put("someTitle", "The day we were happy");
-        ;
         titleList.add(titleMap);
         patent.setTitle(titleList);
 
@@ -88,5 +90,17 @@ public class PatentRepositoryTests {
     public void findsByYearTest() {
         List<Patent> result = repository.findByYear("1991");
         assertThat(result).hasSize(1).extracting("year").contains("1991");
+    }
+
+    @Test
+    public void findAllTest() {
+        var result = repository.findAll();
+        assertTrue(result.size() > 0);
+    }
+
+    @Test
+    public void findByIdTest() {
+        Optional<Patent> patent = repository.findById(ID);
+        assertNotNull(patent);
     }
 }
