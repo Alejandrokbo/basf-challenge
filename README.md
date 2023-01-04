@@ -16,7 +16,7 @@
 - **Postman** ``enpoint testing`` *~ se below the necessary files to import:*
 
   * [ENVIRONMENT](postman/BASF.postman_environment.json)
-  * [COLLECTIONS](postman/BASF CHALLENGE ENDPOINTS.postman_collection.json)
+  * [COLLECTIONS](postman/BASF_CHALLENGE_ENDPOINTS.postman_collection.json)
 
 For process a xml Patent use this configuration in Postman *~ This sets a Multipart file needed for process:*
 
