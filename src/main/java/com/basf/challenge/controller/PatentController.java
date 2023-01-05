@@ -39,7 +39,14 @@ public class PatentController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        if (savedPatent.getId() == null) {
+            return ResponseHandler.response(
+                    ResponseConstants.EF02.getStatus(),
+                    ResponseConstants.EF02.getMessage(),
+                    HttpStatus.CONFLICT,
+                    null
+            );
+        }
         return ResponseHandler.response(
                 ResponseConstants.OK.getStatus(),
                 ResponseConstants.OK.getMessage(),

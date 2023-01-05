@@ -88,7 +88,7 @@ public class PatentRepositoryTests {
 
     @Test
     public void findsByYearTest() {
-        List<Patent> result = repository.findByYear("1991");
+        List<Patent> result = repository.findPatentsByYear("1991");
         assertThat(result).hasSize(1).extracting("year").contains("1991");
     }
 
@@ -100,7 +100,7 @@ public class PatentRepositoryTests {
 
     @Test
     public void findByIdTest() {
-        Optional<Patent> patent = repository.findById(ID);
+        Optional<Patent> patent = repository.findPatentById(ID);
         assertNotNull(patent);
     }
 }
