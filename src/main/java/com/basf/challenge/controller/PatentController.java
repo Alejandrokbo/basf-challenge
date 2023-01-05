@@ -32,6 +32,14 @@ public class PatentController {
                     null
             );
         }
+        if (!file.getOriginalFilename().contains(".xml")) {
+            return ResponseHandler.response(
+                    ResponseConstants.EF02.getStatus(),
+                    ResponseConstants.EF02.getMessage(),
+                    HttpStatus.NOT_ACCEPTABLE,
+                    null
+            );
+        }
         var savedPatent = new Patent();
         try {
             String content = new String(file.getBytes(), StandardCharsets.UTF_8);
@@ -39,7 +47,14 @@ public class PatentController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        if (savedPatent.getId() == null) {
+            return ResponseHandler.response(
+                    ResponseConstants.EF03.getStatus(),
+                    ResponseConstants.EF03.getMessage(),
+                    HttpStatus.CONFLICT,
+                    null
+            );
+        }
         return ResponseHandler.response(
                 ResponseConstants.OK.getStatus(),
                 ResponseConstants.OK.getMessage(),

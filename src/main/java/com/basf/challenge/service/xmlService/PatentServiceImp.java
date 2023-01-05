@@ -48,6 +48,10 @@ public class PatentServiceImp implements PatentService {
         var inventionTitleList = questelPatentDocument.getBibliographicData().getInventionTitle();
         for (InventionTitle inventionTitle : inventionTitleList) {
             var newTitle = new HashMap<String, String>();
+            var title = cleanText(inventionTitle.getContent());
+            if (verifyExistence(title)) {
+                return new Patent();
+            }
             newTitle.put(inventionTitle.getId(), cleanText(inventionTitle.getContent()));
             titleList.add(newTitle);
         }
@@ -79,7 +83,7 @@ public class PatentServiceImp implements PatentService {
 
     @Override
     public Optional<Patent> findById(String id) {
-        return repository.findById(id);
+        return repository.findPatentById(id);
     }
 
     @Override
@@ -107,5 +111,19 @@ public class PatentServiceImp implements PatentService {
             }
         }
         return wordsRelated;
+    }
+
+    private Boolean verifyExistence(String title) {
+        var patentList = repository.findAll();
+        for (Patent patent : patentList) {
+            var titles = patent.getTitle();
+            for (Object object : titles) {
+                var mapObject = new HashMap<>((Map<?, ?>) object);
+                if (mapObject.containsValue(title)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

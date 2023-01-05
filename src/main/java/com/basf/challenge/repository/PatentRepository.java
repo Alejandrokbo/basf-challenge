@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface PatentRepository extends MongoRepository<Patent, String> {
-    List<Patent> findByYear(String year);
+    List<Patent> findPatentsByYear(String year);
 
     @NotNull
-    Optional<Patent> findById(@NotNull String id);
+    Optional<Patent> findPatentById(@NotNull String id);
 }
